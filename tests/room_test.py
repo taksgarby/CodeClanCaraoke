@@ -67,6 +67,18 @@ class TestRoom(unittest.TestCase):
         self.assertEqual("Sorry, there is no more space in this room.", result)
 
 
+    def test_cheer_for_fave_song(self):
+        # arrange
+        guest = Guest("Totoro", 100.00, "Shima Uta")
+        self.room.check_in_guest(guest)
+        song = Song("Shima Uta", "The Boom")
+        self.room.add_song(song)
+        result = self.room.cheer_for_fave_song(guest.fave_song)
+        self.assertEqual("Woo Hoo", result )
+        
+
+        
+
     # def test_add_to_total_sales(self):
     #     # arrange
     #     guest_1 = Guest("April", 5.00)
@@ -85,6 +97,3 @@ class TestRoom(unittest.TestCase):
     #     # assert
     #     self.assertEqual(22.50, result)
     #     # self.room.total_sales
-
-    
-        

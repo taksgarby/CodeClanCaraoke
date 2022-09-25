@@ -25,7 +25,12 @@ class Room:
     # def add_total_sales(self):
     #     self.total_sales = self.fee * len(self.guests)
         
-
+    def cheer_for_fave_song(self, fave_song):
+        for song in self.songs:
+            if fave_song == song.title:
+                return "Woo Hoo"
+        else:
+            return "meh"
     
 
     

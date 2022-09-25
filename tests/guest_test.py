@@ -21,8 +21,8 @@ class TestGuest(unittest.TestCase):
     def test_guest_has_fave_song(self):
         self.assertEqual("Radio Gaga", self.guest.fave_song)
 
-    def test_guest_cheer_for_fave_song(self, song):
-        # arrange
-        # action
-        # assert
-        pass
+    # def test_guest_cheer_for_fave_song(self, song):
+    #     # arrange
+    #     # action
+    #     # assert
+    #     pass
